@@ -43,7 +43,6 @@ $('#trackerForm').submit(function(event) {
             encode: true
         })
         .done(function(data) {
-            console.log(data)
             updates = JSON.parse(data);
             if (updates.length > 0 & updates != {}) {
                 for (i = 0; i < updates.length; i++) {
